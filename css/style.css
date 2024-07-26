@@ -10,11 +10,20 @@ body {
     width: 100%;
 }
 
-#remote-body{
+#TV-body{
     margin: 20px 100px;
     width: 200px;
     height: 200px;
     border-radius: 20px;
+    align-items: center;
+}
+
+#TV-body p{
+    position: relative;
+    display: block;
+    top:90px;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -33,8 +42,8 @@ body {
         /* Position the buttons absolutely within the container */
         .image-button {
             position: absolute;
-            /* background-color: transparent;
-            border:none; */
+            background-color: transparent;
+            border:none;
         }
         .remote-button {
             border-radius: 100%;
