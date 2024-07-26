@@ -5,18 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic HTML Template with Bootstrap and JavaScript</title>
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Custom CSS -->
-    <style>
-        /* Add your custom CSS here */
-        body {
-            padding-top: 56px;
-            padding-bottom: 56px; /* Ensures the footer does not overlap content */
-        }
-        .custom-section {
-            padding: 40px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -52,7 +45,31 @@
                 <button id="alertButton" class="btn btn-primary btn-lg btn-block">Click Me</button>
             </div>
         </div>
+        <div class="row">
+
+            <div class="col">
+                <div id="remote-body" class="card text-white bg-primary mb-3 mx-auto" >
+                    <!-- <div class="card-header">Header</div> -->
+                    <!-- <div class="card-body">
+                    <h4 class="card-title">Primary card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center mt-5">
+            <div class="image-container">
+                <img src="img/remote.svg" alt="Image with buttons">
+                <button id="button1" class="btn btn-primary image-button remote-button "></button>
+                <button id="button2" class="btn btn-primary image-button remote-button "></button>
+                <button id="button3" class="btn btn-primary  image-button remote-button "></button>
+                <button id="button4" class="btn btn-primary  image-button remote-button "></button>
+                <button id="button5" class="btn btn-primary  image-button remote-button "></button>
+            </div>
+        </div>
     </div>
+   
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start fixed-bottom">
@@ -67,10 +84,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Custom JavaScript -->
-    <script>
-        document.getElementById('alertButton').addEventListener('click', function() {
-            alert('Button was clicked!');
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
