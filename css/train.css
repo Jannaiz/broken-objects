@@ -8,7 +8,7 @@
 }
 
 /* Style for the image */
-.image-container img {
+.image-container .background {
     display: block;
     width: 100%; /* Ensure the image fits within the container */
 }
@@ -42,3 +42,28 @@
     top: 15%;
   right: 1.5%;
 }
+
+.seatHuman, .hoverHuman{
+    position: absolute;
+    width: 10%;
+    height: auto;
+    top:33%;
+    display: none;
+}
+
+.hoverHuman{
+    top:66%;
+}
+
+#human1, #human1Hover{
+    left: 25%;
+}
+#human2, #human2Hover{
+    left: 40%;   
+}
+#human3, #human3Hover{
+    right: 20%;   
+}   
+#human4, #human4Hover{
+    right: 3%;   
+}   
