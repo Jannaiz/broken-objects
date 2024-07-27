@@ -41,31 +41,59 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="text-center">Welcome to the magic tv remote</h1>
-                <p class="text-center">This is a simple example where you can test the remote.</p>
-                <button id="alertButton" class="btn btn-primary btn-lg btn-block">Click Me</button>
+                <p class="text-center">This is a simple example where you can a test tv remote.</p>
             </div>
         </div>
         <div class="row">
-
+            <h2 class="text-center">The broken tv remote</h2>
+            <p class="text-center">This is a TV width 5 channels. Go to your favorite channel by using the TV remote below the it. </p>
             <div class="col">
                 <div id="TV-body" class="card text-white bg-primary mb-3 mx-auto" >
-                    <!-- <div class="card-header">Header</div> -->
-                    <!-- <div class="card-body"> -->
-                    <!-- <h4 class="card-title">Primary card title</h4> -->
                     <p id="channel_number" class="card-text">Channel # 1</p>
-                    <!-- </div>  -->
                 </div>
             </div>
         </div>
+        
+        <div class="row">
+            
+            <div class="container text-center mt-5">
+                <div class="image-container">
+                    <img src="img/remote.svg" alt="Image with buttons">
+                    <button id="button1" class="btn btn-primary image-button remote-button "></button>
+                    <button id="button2" class="btn btn-primary image-button remote-button "></button>
+                    <button id="button3" class="btn btn-primary  image-button remote-button "></button>
+                    <button id="button4" class="btn btn-primary  image-button remote-button "></button>
+                    <button id="button5" class="btn btn-primary  image-button remote-button "></button>
+                </div>
+            </div>
+            <p class="text-center">At first the TV looks broken. When you press a button on the remote the TV seems to change to the worng channel.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center">History</h2>
+                <p class="text-center">Below is a table showing your previous button presses on the tv remote. The last column shows the result from pressing that button</p>
+            </div>
+        </div>
 
-        <div class="container text-center mt-5">
-            <div class="image-container">
-                <img src="img/remote.svg" alt="Image with buttons">
-                <button id="button1" class="btn btn-primary image-button remote-button "></button>
-                <button id="button2" class="btn btn-primary image-button remote-button "></button>
-                <button id="button3" class="btn btn-primary  image-button remote-button "></button>
-                <button id="button4" class="btn btn-primary  image-button remote-button "></button>
-                <button id="button5" class="btn btn-primary  image-button remote-button "></button>
+        <div class="row">
+
+            <table id="history" class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">current</th>
+                    <th scope="col">requested</th>
+                    <th scope="col">resulting</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-center">Press a few buttons. Can you find the pattern?</p>
+                <p class="text-center">I may seem random at first but there is accualy a simple way to discribe this broken tv remote.</p>
             </div>
         </div>
     </div>

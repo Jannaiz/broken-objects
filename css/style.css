@@ -76,3 +76,9 @@ body {
             left: 50%; /* Adjust left position */
             transform: translate(-50%,-50%);
         }
+
+
+#history{
+    margin: 20px;
+    padding: 20px;
+}
