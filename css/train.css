@@ -1,0 +1,59 @@
+
+
+
+/* Container for the image and buttons */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the image */
+.image-container img {
+    display: block;
+    width: 100%; /* Ensure the image fits within the container */
+}
+
+/* Position the buttons absolutely within the container */
+.image-button {
+    position: absolute;
+    /* background-color: transparent;
+    border:none; */
+}
+.remote-button {
+    border-radius: 100%;
+    width: 28.571428571%;
+    height: 16.6667%;
+}
+/* Specific button positions */
+#button1 {
+    top: 22%; /* Adjust top position */
+    left: 14.28%; /* Adjust left position */
+
+}
+
+#button2 {
+    top: 22%; /* Adjust top position */
+    right: 14.28%; /* Adjust left position */
+    /* transform: translate(-50%, -50%); */ /* Center the button */
+}
+
+#button3 {
+    top: 45.8333333%; /* Adjust bottom position */
+    left: 14.28%; /* Adjust left position */
+}
+#button4 {
+    top: 45.8333333%; /* Adjust bottom position */
+    right: 14.28%; /* Adjust left position */
+}
+#button5 {
+    bottom: 10%; /* Adjust bottom position */
+    left: 50%; /* Adjust left position */
+    transform: translate(-50%,-50%);
+}
+
+
+#history{
+    margin: 20px auto;
+    padding: 20px;
+    width: auto;
+}

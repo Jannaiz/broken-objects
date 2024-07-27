@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broken Objects</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/remote.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Broken Objects</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="remote.html">Remote</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="train.html">Train</a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container custom-section">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="text-center">Welcome to the <bold>broken</bold> TV remote</h1>
+                <p class="text-center">This is a simple demonstration for testing a TV remote.</p>
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="text-center">The Broken TV Remote</h2>
+            <p class="text-center">This TV has 5 channels. Use the remote below to navigate to your favourite channel.</p>
+            <div class="col">
+                <div id="TV-body" class="card text-white bg-primary mb-3 mx-auto">
+                    <img id="TV-content" src="https://media4.giphy.com/media/XhT868oxljs88/giphy.gif?cid=6c09b952v8loihgz7aa8lqol4spftof6i560ldxt9t7lcvma&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="TV Screen" class="card-img-top">
+                    <p id="channel_number" class="card-text">Channel # 1</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="container text-center mt-5">
+                <div class="image-container">
+                    <img src="img/remote.svg" alt="Image with buttons">
+                    <button id="button1" class="btn btn-primary image-button remote-button "></button>
+                    <button id="button2" class="btn btn-primary image-button remote-button "></button>
+                    <button id="button3" class="btn btn-primary  image-button remote-button "></button>
+                    <button id="button4" class="btn btn-primary  image-button remote-button "></button>
+                    <button id="button5" class="btn btn-primary  image-button remote-button "></button>
+                </div>
+            </div>
+            <p class="text-center">Initially, the TV appears to be malfunctioning. When a button on the remote is pressed, the TV switches to an unexpected channel.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center">History</h2>
+                <p class="text-center">Below is a table displaying your previous button presses on the remote.
+                    The last column indicates the result of each button press.</p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <table id="history" class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">current</th>
+                    <th scope="col">requested</th>
+                    <th scope="col">resulting</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-center">Try pressing a few buttons. Can you identify the pattern?</p>
+                <p class="text-center">Despite appearing random at first, there is a straightforward explanation for this seemingly dysfunctional TV remote.</p>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start fixed-bottom">
+        <div class="text-center p-3">
+            A webside for the SOMEpi
+            <!-- <a class="text-dark" href="https://yourcompany.com/">yourcompany.com</a> -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap and JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/remote.js"></script>
+</body>
+</html>
