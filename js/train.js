@@ -40,7 +40,8 @@ function calculate_state(current_state, new_state){
             }
             console.log("not avaalane");
         }
-        console.log("ERROR");
+        //console.log("ERROR");
+        return E
         
     }
     return result;
