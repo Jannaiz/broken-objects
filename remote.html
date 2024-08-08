@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Broken Objects</title>
+    
     <!-- Bootstrap CSS -->
     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/remote.css">
     
+    <!--Latex suport-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -53,8 +58,8 @@
             <p class="text-center">This TV has five channels. Try Using the remote below to navigate to your favourite channel.</p>
             <div class="col">
                 <div id="TV-body" class="card text-white bg-primary mb-3 mx-auto">
-                    <img id="TV-content" src="https://media4.giphy.com/media/XhT868oxljs88/giphy.gif?cid=6c09b952v8loihgz7aa8lqol4spftof6i560ldxt9t7lcvma&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="TV Screen" class="card-img-top">
-                    <p id="channel_number" class="card-text">Channel # 1</p>
+                    <img id="TV1-content" src="https://media4.giphy.com/media/XhT868oxljs88/giphy.gif?cid=6c09b952v8loihgz7aa8lqol4spftof6i560ldxt9t7lcvma&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="TV Screen" class="card-img-top">
+                    <p id="channel_number-tv1" class="card-text channel_number">Channel # 1</p>
                 </div>
             </div>
         </div>
@@ -64,11 +69,11 @@
             <div class="container text-center mt-5">
                 <div class="image-container">
                     <img src="img/remote.svg" alt="Image with buttons">
-                    <button id="button1" class="btn btn-primary image-button remote-button "></button>
-                    <button id="button2" class="btn btn-primary image-button remote-button "></button>
-                    <button id="button3" class="btn btn-primary  image-button remote-button "></button>
-                    <button id="button4" class="btn btn-primary  image-button remote-button "></button>
-                    <button id="button5" class="btn btn-primary  image-button remote-button "></button>
+                    <button id="button1-tv1" class="button1 btn btn-primary image-button remote-button "></button>
+                    <button id="button2-tv1" class="button2 btn btn-primary image-button remote-button "></button>
+                    <button id="button3-tv1" class="button3 btn btn-primary  image-button remote-button "></button>
+                    <button id="button4-tv1" class="button4 btn btn-primary  image-button remote-button "></button>
+                    <button id="button5-tv1" class="button5 btn btn-primary  image-button remote-button "></button>
                 </div>
             </div>
             <p class="text-center">Initially, the TV appears to be malfunctioning. When a button on the remote is pressed, the TV switches to an unexpected channel.</p>
@@ -99,11 +104,75 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <p class="text-center">Try pressing a few buttons. Can you identify the pattern?</p>
-                <p class="text-center">Despite appearing random at first, there is a straightforward explanation for this seemingly dysfunctional TV remote. Comtinue realing for the explenation.</p>
+                <p class="text-center">Try pressing a few buttons. Can you identify the pattern?<br>Spend a minute analyzing the table to find it.</p>
+                <p class="text-center">Despite appearing random at first, there is a straightforward explanation for this seemingly dysfunctional TV remote. Continue realing for the explenation.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cla-lg-12">
+                <h2  class="text-center">Complex At First, Simple At Last</h2>
+                <p  class="text-center"> If you didn't find a simple explanation for the broken TV remote, try pressing the one button five times.</p>
+                <p  class="text-center"> Looking at the table width just the one presses gives the following.</p>
+                <table id="history-ones" class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">current</th>
+                        <th scope="col">requested</th>
+                        <th scope="col">resulting</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                
+                
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-center">Every time you press "1," the TV advances to the next channel.When you reach channel five, it loops back to channel one. <br>A simple solution at last!</p>
+                    <p class="text-center">Wouldn't it be great if all the buttons followed this straightforward addition pattern?<br>But the "5" button behaves a little differently. Try pressing it…</p>
+                    
+                    <div id="TV-body" class="card text-white bg-primary mb-3 mx-auto">
+                        <img id="TV2-content" src="https://media4.giphy.com/media/XhT868oxljs88/giphy.gif?cid=6c09b952v8loihgz7aa8lqol4spftof6i560ldxt9t7lcvma&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="TV Screen" class="card-img-top">
+                        <p id="channel_number-tv2" class="card-text channel_number">Channel # 1</p>
+                    </div>
+                    <div class="container text-center mt-5">
+                        <div class="image-container">
+                            <img src="img/remote.svg" alt="Image with buttons">
+                            <button id="button1-tv2" class="button1 btn btn-primary image-button remote-button "></button>
+                            <button id="button2-tv2" class="button2 btn btn-primary image-button remote-button "></button>
+                            <button id="button3-tv2" class="button3 btn btn-primary  image-button remote-button "></button>
+                            <button id="button4-tv2" class="button4 btn btn-primary  image-button remote-button "></button>
+                            <button id="button5-tv2" class="button5 btn btn-primary  image-button remote-button "></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center">Nothing happens! The current channel plus five results in… the same channel?</p>
+        </div>
+
+        <div class="row">
+            <div class="cla-lg-12">
+                <p  class="text-center"> If we want to describe the remote's behaviour using simple arithmetic, a better name for the "5" button would be "0." So, we have:</p>
+                <p  class="text-center">
+                        \[  \text{current channel} + zero = \text{current channel} \] 
+                        The other buttons work in a similar fashion:
+                        \[current + requested = resulting\]
+                </p>
+
             </div>
         </div>
 
+        <div class="row">
+            <div class="cla-lg-12">
+                <p  class="text-center">But what if the sum of the current and requested channels exceeds four? 
+                    <br>Let's find out! Press the remote to test exceeding four.</p>
+                <p  class="text-center"> Any number greater than four (remember, channel five is now channel zero) loops back to zero. 
+                    <br>This is just like a clock that loops back to the beginning after reaching twelve.</p>
+            </div>
+
+        </div>
         <div class="row">
             <div class="cla-lg-12">
                     <!-- Clock Container -->
@@ -129,7 +198,20 @@
                     <!-- Clock Hand -->
                     <div class="clock-hand" id="clockHand"></div>
                 </div>
+                <p class="text-center">Move the clock hand four hours forward. Just like with the remote, the clock loops back and lands on two.</p>
+                <p class="text-center">This looping behaviour is known in mathematics as modulo, often written as "mod" or "%." A more precise way to understand modulo is through division. </p>
+                <p class="text-center"> For example, the result of  7 mod 5  is the remainder of 7 divided by 5:
+                    \[ 7 \div 5 = 1 \text{ remainder } 2\]
+                    This means:
+                    \[ 7\mod 5 = 2\]
+                </p>
+                <p class="text-center"> If this is new to you, just think of modulo as the same concept as the clock looping around.</p>
+                <p class="text-center"> This leads us to the final formula for our TV remote:
+                    \[ (current + requested) \text{ looping from } 5 = resulting\]
+                    Or, even more succinctly:
+                    \[ (current + requested)\mod 5  = resulting\]
 
+                </p>
             </div>
         </div>
     </div>
