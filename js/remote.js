@@ -26,6 +26,13 @@ function addListItem(channel1, channel2, result) {
             c.appendChild(row);
         }
     });
+    if(channel2 == 1){
+        document.getElementById('history-ones').childNodes.forEach(c =>{
+            if(c.nodeName == "TBODY"){
+                c.appendChild(row.cloneNode(true));
+            }
+        });
+    }
 }
 
 let channelContent = ["https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDlsaW94dGRjdHhhOXhlZ3gydzlnZWdid3dpOWg2bm8yZXQ1NmcyNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YTDZakyAorkLDYqN0q/giphy.gif",
@@ -35,21 +42,26 @@ let channelContent = ["https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDlsaW94dGRj
     "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGc3bWRoc2k5Z2p6ZnBoamcycGk3NXk1amU2ZWF6ajNjZ3pwaGFwayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Sb7WSbjHFNIL6/giphy.gif"
 ];
 
-function changeChannel(channel){
-    document.getElementById('TV-content').src = channelContent[channel%5];
-    document.getElementById('channel_number').innerText = "Channel # "+channel;
+function changeChannel(channel, tv){
+    document.getElementById('TV'+tv+'-content').src = channelContent[channel%5];
+    document.getElementById('channel_number-tv'+tv).innerText = "Channel # "+channel;
 }
 
 let current_channel = 1;
-for (let index = 1; index < 6; index++) {
-    document.getElementById('button'+index).addEventListener('click', function() {
-        let old_channel = current_channel;
-        current_channel = (current_channel  +index)%5 ;
-        if(current_channel == 0) current_channel = 5;
-        changeChannel(current_channel);
-        addListItem(old_channel, index, current_channel);
-    });  
+
+for(let tv = 1; tv <= 2; tv++){
+    for (let index = 1; index < 6; index++) {
+        document.getElementById('button'+index+"-tv"+tv).addEventListener('click', function() {
+            let old_channel = current_channel;
+            current_channel = (current_channel  +index)%5 ;
+            if(current_channel == 0) current_channel = 5;
+            changeChannel(current_channel, tv);
+            if(tv == 1)addListItem(old_channel, index, current_channel);
+        });  
+    }
+    
 }
+
 
 
 const clockHand = document.getElementById('clockHand');

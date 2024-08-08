@@ -11,7 +11,7 @@
 
 }
 
-#channel_number {
+.channel_number {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -19,6 +19,7 @@
     padding: 5px;
     border-radius: 5px;
 }
+
 .card-img-top {
     display: block;
     width: 100%;
@@ -51,34 +52,34 @@
     height: 16.6667%;
 }
 /* Specific button positions */
-#button1 {
+.button1 {
     top: 22%; /* Adjust top position */
     left: 14.28%; /* Adjust left position */
 
 }
 
-#button2 {
+.button2 {
     top: 22%; /* Adjust top position */
     right: 14.28%; /* Adjust left position */
     /* transform: translate(-50%, -50%); */ /* Center the button */
 }
 
-#button3 {
+.button3 {
     top: 45.8333333%; /* Adjust bottom position */
     left: 14.28%; /* Adjust left position */
 }
-#button4 {
+.button4 {
     top: 45.8333333%; /* Adjust bottom position */
     right: 14.28%; /* Adjust left position */
 }
-#button5 {
+.button5 {
     bottom: 10%; /* Adjust bottom position */
     left: 50%; /* Adjust left position */
     transform: translate(-50%,-50%);
 }
 
 
-#history{
+#history, #history-ones{
     margin: 20px auto;
     padding: 20px;
     width: auto;
