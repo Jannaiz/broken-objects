@@ -52,3 +52,32 @@ for (let index = 1; index < 6; index++) {
 }
 
 
+const clockHand = document.getElementById('clockHand');
+        const clock = document.querySelector('.clock');
+        let isDragging = false;
+
+        function getAngle(x, y) {
+            const rect = clock.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            const deltaX = x - centerX;
+            const deltaY = y - centerY;
+            let angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI) + 90;
+            if (angle < 0) angle += 360;
+            return angle;
+        }
+
+        clockHand.addEventListener('mousedown', (e) => {
+            isDragging = true;
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const angle = getAngle(e.clientX, e.clientY);
+                clockHand.style.transform = `rotate(${angle}deg)`;
+            }
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });

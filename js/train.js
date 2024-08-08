@@ -11,6 +11,11 @@ const operation = [[E,  LL, LR, RL, RR  ],
                    [RR, -1,  -1, E,  LL  ]];
 
 let full_operations = operation;
+let table = [[-1,-1,-1,-1,-1],
+            [-1,-1,-1,-1,-1],
+            [-1,-1,-1,-1,-1],
+            [-1,-1,-1,-1,-1],
+            [-1,-1,-1,-1,-1]];
 
 function calculate_state(current_state, new_state){
     let result = full_operations[current_state][new_state];
@@ -36,17 +41,23 @@ function calculate_state(current_state, new_state){
                 console.log("yess");
                 full_operations[current_state][new_state] = element;
                 full_operations[new_state][current_state] = element;
+
                 return element;
             }
             console.log("not avaalane");
         }
         //console.log("ERROR");
+
         return E
         
     }
+
     return result;
 }
 
+function updateTable(row, col, state){
+
+}
 
 let state = E;
 /*This is also for the hovering, refactor hovering later for css*/

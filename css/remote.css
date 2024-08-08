@@ -83,3 +83,60 @@
     padding: 20px;
     width: auto;
 }
+
+/* Styling for the clock */
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 50%;
+    margin: 50px auto;
+}
+/* Styling for the clock hand */
+.clock-hand {
+    position: absolute;
+    width: 10px;
+    height: 90px;
+    background-color: red;
+    top: 10px;
+    left: 50%;
+    transform-origin: bottom;
+    transform: rotate(-60deg);
+    cursor: pointer;
+}
+
+/* Styling for the clock center (pivot point) */
+.clock-center {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    top: 95px;
+    left: 95px;
+}
+
+/* Styling for hour markers */
+.hour-marker {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    text-align: center;
+    transform-origin: center;
+    left:86px;
+}
+
+/* Position each hour marker */
+.hour-1 { transform: rotate(30deg); }
+.hour-2 { transform: rotate(60deg); }
+.hour-3 { transform: rotate(90deg); }
+.hour-4 { transform: rotate(120deg); }
+.hour-5 { transform: rotate(150deg); }
+.hour-6 { transform: rotate(180deg); }
+.hour-7 { transform: rotate(-150deg); }
+.hour-8 { transform: rotate(-120deg);}
+.hour-9 { transform: rotate(-90deg);}
+.hour-10 { transform: rotate(-60deg); }
+.hour-11 { transform: rotate(-30deg);}
+/* .hour-12 {  } */
