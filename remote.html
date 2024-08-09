@@ -215,7 +215,71 @@
             </div>
         </div>
     </div>
-   
+   <div class="row">
+    <div class="cla-lg-12">
+        <h2  class="text-center">The Lager Pattern</h2>
+        <p class="text-center">In mathematics, the Lager Pattern exemplifies a concept known as addition in \(\mathbb{Z}_5\). 
+            <br>This refers to addition performed under modulo 5, where \(\mathbb{Z}\) signifies the use of whole numbers only.</p>
+
+        <p class="text-center"><span class="fw-bold">How can you discover this pattern yourself, especially if you're not a math expert? </span>
+            How can you be sure that the remote isn't just randomly selecting channels?</p>
+        <p class="text-center">Start with a simpler approach: look for a rule that consistently applies when using the broken remote.<br>Here's a hint: With just 5 rules, you can fully describe the behavior of the broken remote.</p>
+        
+        
+        <div class="container mt-5 d-flex justify-content-center">
+            <ol class="list-group centered-list">
+                <li > <h4>Basic Rule: Channel Range</h3>
+                    <p class="text-center">The resulting channel will always be one of the 5 available channels. Let's label these channels \(G\). <br>This rule might seem obvious, but it has a specific term in mathematics: a binary operation. A binary operation involves two parameters, <br>the current and the requested channel, and our remote always returns a channel within \(G\).</p>
+                
+
+                </li>
+                <li ><h4>Symmetry</h4>
+                    <p class="text-center">Another observation reveals that the order of the channels doesn't matter. <br>For instance, combining channels 1 and 2 yields the same result as combining channels 2 and 1. <br>This is known as symmetry: the remote operation is commutative.</p>
+
+
+                </li>
+                <li ><h4>Zero Element</h4>
+                    <p class="text-center">For button 5, we've identified that it always leaves the current channel unchanged. <br>This button represents what we call the zero element because, <br>just like adding zero in arithmetic, it doesn't alter the outcome:
+                        \[ zero element+original=original=original+zero element \]
+                        The presence of such a zero element is another rule of our remote.
+                    </p>
+                    
+                </li>
+                <li> <h4>Inverse Element</h4>
+                        <p class="text-center">The fourth rule states that every channel has an inverse. <br>You can always return to the zero element (channel 5) by using the appropriate inverse channel. <br>For a given channel, the inverse can be found as:
+                            \[ inverse\text{ of current }=(5 - current)mod5\]
+                            This means:
+                            \[(current+inverse)mod5=(current+(5-current))mod5=0\]
+                            Channel 0 and channel 5 are considered the same as stated above.
+                        </p>
+                </li>
+                <li> <h4>Associativity</h4>
+                        <p class="text-center">The last rule involves how three channels are combined. The order in which you combine the channels doesn't matter:
+                            \[ (request1+request2)+request3=request1+(request2+request3)\]
+                            This property is known as associativity.
+                        </p>
+                </li>
+            </ol>
+
+            
+        </div>
+        <p class="text-center"><span class="fw-bold">In summary, here are the 5 rules:</span></p>
+        <div class="container centered-container" style="width: 50%;">
+            <ol class="list-group centered-list">
+                <li >The resulting channel is always one of the 5 available channels.</li>
+                <li class="">The operation is commutative (order doesn't matter).</li>
+                <li class="">There is a zero element (button 5) that leaves the channel unchanged.</li>
+                <li class="">Every channel has an inverse channel that returns you to the zero element.</li>
+                <li> The operation is associative (grouping doesn't matter).</li>
+            </ol>
+        </div>
+        
+        <h3 class="text-center">Conclusion</h3>
+        <p class="text-center">
+            Structures that follow these 5 rules are termed groups. <br>Despite appearing random, our TV remote adheres to these rules, just as simple addition within whole numbers does.
+        </p>
+    </div>
+   </div>
 
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start fixed-bottom">
