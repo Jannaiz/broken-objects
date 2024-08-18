@@ -4,7 +4,7 @@ const LR = 2;
 const RL = 3;
 const RR = 4;
 
-const trainAmount = 2;
+const trainAmount = 4;
 
 const operation = [[E,  LL, LR, RL, RR  ],
                    [LL, RR, E,  -1, RL  ],

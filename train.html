@@ -112,16 +112,19 @@
                         <li class=""><span class="fw-bold">Opposite Side Shift:</span> If a person attempts to sit in a seat that's already occupied on either the far-left or far-right, one person vanishes, and the other is shifted to the opposite side.</li>
                     </ol>
                 </div>
-                
-                
                 <p class="text-center">But can we explain these mysterious rules? Do they account for all possible outcomes?<br> And, more intriguingly, does this broken train form a group like the broken remote?</p>
                 <p class="text-center">There are five possible seating arrangements, similar to the five channels on the remote. These are:</p>
-                <p class="text-center"><span class="fw-bold">E:</span> All seats are empty.</p>
-                <p class="text-center"><span class="fw-bold">LL:</span> The leftmost seat is occupied.</p>
-                <p class="text-center"><span class="fw-bold">LR:</span> The right seat on the left side is occupied.</p>
-                <p class="text-center"><span class="fw-bold">RL:</span> The left seat on the right side is occupied.</p>
-                <p class="text-center"><span class="fw-bold">RR:</span> The rightmost seat is occupied.</p>
-
+                
+                <div class="container centered-container" style="width: 50%;">
+                    <ul class="list-group centered-list">
+                        <li ><span class="fw-bold">E:</span> All seats are empty.</li>
+                        <li ><span class="fw-bold">LL:</span> The leftmost seat is occupied.</li>
+                        <li ><span class="fw-bold">LR:</span> The right seat on the left side is occupied.</li>
+                        <li ><span class="fw-bold">RL:</span> The left seat on the right side is occupied.</li>
+                        <li ><span class="fw-bold">RR:</span> The rightmost seat is occupied.</li>
+                    </ul>
+                </div>
+                <p class="text-center">You can either write down these possibilities or use the simulation below to test if the train's behaviour forms a group.</p>
             </div>
         </div>
 
@@ -130,19 +133,19 @@
             <div class="container text-center mt-5">
                 <div class="image-container">
                     <img class="background "src="img/trainV1.svg" alt="Image with buttons">
-                    <img id="train3human1" class="human1 seatHuman" src="img/human.svg" alt="human on the left seat">
-                    <img id="train3human2" class="human2 seatHuman" src="img/human.svg" alt="human on middel left seat">
-                    <img id="train3human3" class="human3 seatHuman" src="img/human.svg" alt="human on middel right seat">
-                    <img id="train3human4" class="human4 seatHuman" src="img/human.svg" alt="human on right seat">
-                    <img id="train3human1Hover" class="human1Hover hoverHuman" src="img/human.svg" alt="human on the left seat">
-                    <img id="train3human2Hover" class="human2Hover hoverHuman" src="img/human.svg" alt="human on middel left seat">
-                    <img id="train3human3Hover" class="human3Hover hoverHuman" src="img/human.svg" alt="human on middel right seat">
-                    <img id="train3human4Hover" class="human4Hover hoverHuman" src="img/human.svg" alt="human on right seat">
+                    <img id="train4human1" class="human1 seatHuman" src="img/human.svg" alt="human on the left seat">
+                    <img id="train4human2" class="human2 seatHuman" src="img/human.svg" alt="human on middel left seat">
+                    <img id="train4human3" class="human3 seatHuman" src="img/human.svg" alt="human on middel right seat">
+                    <img id="train4human4" class="human4 seatHuman" src="img/human.svg" alt="human on right seat">
+                    <img id="train4human1Hover" class="human1Hover hoverHuman" src="img/human.svg" alt="human on the left seat">
+                    <img id="train4human2Hover" class="human2Hover hoverHuman" src="img/human.svg" alt="human on middel left seat">
+                    <img id="train4human3Hover" class="human3Hover hoverHuman" src="img/human.svg" alt="human on middel right seat">
+                    <img id="train4human4Hover" class="human4Hover hoverHuman" src="img/human.svg" alt="human on right seat">
 
-                    <button id="train3button1" class="button1 btn btn-primary image-button remote-button no-hover "></button>
-                    <button id="train3button2" class="button2 btn btn-primary image-button remote-button no-hover"></button>
-                    <button id="train3button3" class="button3 btn btn-primary  image-button remote-button  no-hover"></button>
-                    <button id="train3button4" class="button4 btn btn-primary  image-button remote-button no-hover"></button>
+                    <button id="train4button1" class="button1 btn btn-primary image-button remote-button no-hover "></button>
+                    <button id="train4button2" class="button2 btn btn-primary image-button remote-button no-hover"></button>
+                    <button id="train4button3" class="button3 btn btn-primary  image-button remote-button  no-hover"></button>
+                    <button id="train4button4" class="button4 btn btn-primary  image-button remote-button no-hover"></button>
                 </div>
             </div>
             <p class="text-center">You can use this table as help. The table changes based on your actions.</p>
@@ -213,6 +216,58 @@
         
 
 
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-center">Upon inspection, you'll notice that the three rules don't cover all possible scenarios. However, could we perhaps add more rules to form a complete solution? If so, which rules should we add or remove?</p>
+                <p class="text-center">Here's a hint: there's only one group with five elements, and it's no coincidence that we studied the broken remote earlier.</p>
+                <p class="text-center">Since there's just one group with five elements, we only need to determine whether the train and the remote behave similarly. The key with the remote was the cyclic nature of its one button, which cycled through all the channels. Mathematically, we call this a cyclic element because it covers every possibility when repeated.</p>
+                <p class="text-center">If the train operates like the remote, we should start by looking for a cyclic element. Let's begin with <span class="fw-bold">LL:</span></p>
+                <div class="container centered-container" style="width: 50%;">
+                    <ul class="list-group centered-list">
+                        <li ><span class="fw-bold">E + LL = LL</span></li>
+                        <li ><span class="fw-bold">LL + LL = RR</span></li>
+                        <li ><span class="fw-bold">RR + LL = ?</span></li>
+                    </ul>
+                </div>
+
+                <p class="text-center">At this point, no rule exists for <span class="fw-bold">RR + LL</span>, <br>so let's introduce two new rules (you can verify that choosing different rules leads to the same final conclusion):</p>
+                
+                <div class="container centered-container" style="width: 50%;">
+                    <ul class="list-group centered-list">
+                        <li ><span class="fw-bold">RR + LL = RL</span></li>
+                        <li ><span class="fw-bold">RL + LL = LR</span></li>
+                        <li ><span class="fw-bold">LR + LL = E</span>(already one of the rules)</li>
+                    </ul>
+                </div>
+
+                <p class="text-center">By adding <span class="fw-bold">LL</span>, we can generate all possible outcomes. But did we introduce any contradictions by adding these new rules? Let’s check:</p>
+                
+                <div class="container centered-container" style="width: 50%;">
+                    <ul class="list-group centered-list">
+                        <li >We know from the original rules that<span class="fw-bold">RR + RR = LL</span></li>
+                        <li >But since <span class="fw-bold">RR</span> is the same as <span class="fw-bold">LL + LL</span>, we can write <span class="fw-bold">RR + RR</span> as <span class="fw-bold">RR + (LL + LL)</span>.></li>
+                    </ul>
+                </div>
+                
+                
+                <p class="text-center">If this forms a group, we should be able to add <span class="fw-bold">RR + LL</span> first, which gives us <span class="fw-bold">RL</span>.</p>
+                <p class="text-center"><span class="fw-bold">RR + RR = RR + (LL + LL) = (RR + LL) + LL = RL + LL = LR</span></p>
+                <p class="text-center">Now we have two conflicting results:</p>
+                <div class="container centered-container" style="width: 50%;">
+                    <ul class="list-group centered-list">
+                        <li ><span class="fw-bold">RR + RR = LR</span></li>
+                        <li ><span class="fw-bold">RR + RR = LL</span></li>
+                    </ul>
+                </div>
+                <p class="text-center">This contradiction shows that our assumption that the train's behaviour forms a group, even after adding new rules, is false.
+                    <br>You can try other combinations, but you'll find that the train's seats will never behave in the same way as the remote.</p>
+                <h2 class="text-center">Conclusion</h2>
+                <p class="text-center">By examining simple rules underlying complex behaviours, we discovered a clear pattern with the remote, which is known as a group. However, not all complex behaviours can be simplified in this way, as we saw with the train.</p>
+            </div>
+
+
+            
         </div>
     </div>
     <!-- Footer -->
