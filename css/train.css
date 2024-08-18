@@ -25,20 +25,20 @@
     transform: rotate(10deg);
 }
 /* Specific button positions */
-#button1 {
+.button1 {
     top: 15%;
     left: 22.4%;
 }
-#button2 {
+.button2 {
     top: 15%;
     left: 38.5%;
 }
 
-#button3 {
+.button3 {
     top: 15%;
     right: 17.5%;
 }
-#button4 {
+.button4 {
     top: 15%;
   right: 1.5%;
 }
@@ -55,16 +55,16 @@
     top:66%;
 }
 
-#human1, #human1Hover{
+.human1, .human1Hover{
     left: 25%;
 }
-#human2, #human2Hover{
+.human2, .human2Hover{
     left: 40%;   
 }
-#human3, #human3Hover{
+.human3, .human3Hover{
     right: 20%;   
 }   
-#human4, #human4Hover{
+.human4, .human4Hover{
     right: 3%;   
 }   
 
