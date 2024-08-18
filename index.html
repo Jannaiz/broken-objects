@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/remote.css">
+    <link rel="stylesheet" href="css/train.css">
     
 </head>
 <body>
@@ -45,6 +49,514 @@
             </div>
         </div>
     </div>
+
+    <!-- Main Content -->
+    <div class="container custom-section">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="text-center">Welcome to the <bold>broken</bold> TV remote</h1>
+                <p class="text-center">Have you ever faced a challenging problem?<br>Few things are more satisfying than discovering a simple solution to such complexities.</p>
+                <p class="text-center">Take, for example, a broken TV remote. 
+                    What might initially seem like a straightforward issue can present a complex problem. 
+                    Yet, finding a simple fix for it can be incredibly satisfying.</p>
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="text-center">The Broken TV Remote</h2>
+            <p class="text-center">This TV has five channels. Try Using the remote below to navigate to your favourite channel.</p>
+            <div class="col">
+                <div id="TV-body" class="card text-white bg-primary mb-3 mx-auto">
+                    <img id="TV1-content" src="https://media4.giphy.com/media/XhT868oxljs88/giphy.gif?cid=6c09b952v8loihgz7aa8lqol4spftof6i560ldxt9t7lcvma&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="TV Screen" class="card-img-top">
+                    <p id="channel_number-tv1" class="card-text channel_number">Channel # 1</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="container text-center mt-5">
+                <div class="image-container">
+                    <img src="img/remote.svg" alt="Image with buttons">
+                    <button id="button1-tv1" class="button1 btn btn-primary image-button remote-button "></button>
+                    <button id="button2-tv1" class="button2 btn btn-primary image-button remote-button "></button>
+                    <button id="button3-tv1" class="button3 btn btn-primary  image-button remote-button "></button>
+                    <button id="button4-tv1" class="button4 btn btn-primary  image-button remote-button "></button>
+                    <button id="button5-tv1" class="button5 btn btn-primary  image-button remote-button "></button>
+                </div>
+            </div>
+            <p class="text-center">Initially, the TV appears to be malfunctioning. When a button on the remote is pressed, the TV switches to an unexpected channel.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center">History</h2>
+                <p class="text-center">Below is a table displaying your previous button presses on the remote.
+                    The last column indicates the result of each button press.</p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <table id="history" class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">current</th>
+                    <th scope="col">requested</th>
+                    <th scope="col">resulting</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="text-center">Try pressing a few buttons. Can you identify the pattern?<br>Spend a minute analyzing the table to find it.</p>
+                <p class="text-center">Despite appearing random at first, there is a straightforward explanation for this seemingly dysfunctional TV remote. Continue realing for the explenation.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cla-lg-12">
+                <h2  class="text-center">Complex At First, Simple At Last</h2>
+                <p  class="text-center"> If you didn't find a simple explanation for the broken TV remote, try pressing the one button five times.</p>
+                <p  class="text-center"> Looking at the table width just the one presses gives the following.</p>
+                <table id="history-ones" class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">current</th>
+                        <th scope="col">requested</th>
+                        <th scope="col">resulting</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                
+                
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-center">Every time you press "1," the TV advances to the next channel.When you reach channel five, it loops back to channel one. <br>A simple solution at last!</p>
+                    <p class="text-center">Wouldn't it be great if all the buttons followed this straightforward addition pattern?<br>But the "5" button behaves a little differently. Try pressing it…</p>
+                    
+                    <div id="TV-body" class="card text-white bg-primary mb-3 mx-auto">
+                        <img id="TV2-content" src="https://media4.giphy.com/media/XhT868oxljs88/giphy.gif?cid=6c09b952v8loihgz7aa8lqol4spftof6i560ldxt9t7lcvma&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="TV Screen" class="card-img-top">
+                        <p id="channel_number-tv2" class="card-text channel_number">Channel # 1</p>
+                    </div>
+                    <div class="container text-center mt-5">
+                        <div class="image-container">
+                            <img src="img/remote.svg" alt="Image with buttons">
+                            <button id="button1-tv2" class="button1 btn btn-primary image-button remote-button "></button>
+                            <button id="button2-tv2" class="button2 btn btn-primary image-button remote-button "></button>
+                            <button id="button3-tv2" class="button3 btn btn-primary  image-button remote-button "></button>
+                            <button id="button4-tv2" class="button4 btn btn-primary  image-button remote-button "></button>
+                            <button id="button5-tv2" class="button5 btn btn-primary  image-button remote-button "></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center">Nothing happens! The current channel plus five results in… the same channel?</p>
+        </div>
+
+        <div class="row">
+            <div class="cla-lg-12">
+                <p  class="text-center"> If we want to describe the remote's behaviour using simple arithmetic, a better name for the "5" button would be "0." So, we have:</p>
+                <p  class="text-center">
+                        \[  \text{current channel} + zero = \text{current channel} \] 
+                        The other buttons work in a similar fashion:
+                        \[current + requested = resulting\]
+                </p>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cla-lg-12">
+                <p  class="text-center">But what if the sum of the current and requested channels exceeds four? 
+                    <br>Let's find out! Press the remote to test exceeding four.</p>
+                <p  class="text-center"> Any number greater than four (remember, channel five is now channel zero) loops back to zero. 
+                    <br>This is just like a clock that loops back to the beginning after reaching twelve.</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="cla-lg-12">
+                    <!-- Clock Container -->
+                <div class="clock">
+                    
+                    <!-- Clock Center -->
+                    <div class="clock-center"></div>
+
+                    <!-- Hour Markers -->
+                    <div class="hour-marker hour-12">12</div>
+                    <div class="hour-marker hour-1">1</div>
+                    <div class="hour-marker hour-2">2</div>
+                    <div class="hour-marker hour-3">3</div>
+                    <div class="hour-marker hour-4">4</div>
+                    <div class="hour-marker hour-5">5</div>
+                    <div class="hour-marker hour-6">6</div>
+                    <div class="hour-marker hour-7">7</div>
+                    <div class="hour-marker hour-8">8</div>
+                    <div class="hour-marker hour-9">9</div>
+                    <div class="hour-marker hour-10">10</div>
+                    <div class="hour-marker hour-11">11</div>
+
+                    <!-- Clock Hand -->
+                    <div class="clock-hand" id="clockHand"></div>
+                </div>
+                <p class="text-center">Move the clock hand four hours forward. Just like with the remote, the clock loops back and lands on two.</p>
+                <p class="text-center">This looping behaviour is known in mathematics as modulo, often written as "mod" or "%." A more precise way to understand modulo is through division. </p>
+                <p class="text-center"> For example, the result of  7 mod 5  is the remainder of 7 divided by 5:
+                    \[ 7 \div 5 = 1 \text{ remainder } 2\]
+                    This means:
+                    \[ 7\mod 5 = 2\]
+                </p>
+                <p class="text-center"> If this is new to you, just think of modulo as the same concept as the clock looping around.</p>
+                <p class="text-center"> This leads us to the final formula for our TV remote:
+                    \[ (current + requested) \text{ looping from } 5 = resulting\]
+                    Or, even more succinctly:
+                    \[ (current + requested)\mod 5  = resulting\]
+
+                </p>
+            </div>
+        </div>
+    </div>
+   <div class="row">
+    <div class="cla-lg-12">
+        <h2  class="text-center">The Lager Pattern</h2>
+        <p class="text-center">In mathematics, the Lager Pattern exemplifies a concept known as addition in \(\mathbb{Z}_5\). 
+            <br>This refers to addition performed under modulo 5, where \(\mathbb{Z}\) signifies the use of whole numbers only.</p>
+
+        <p class="text-center"><span class="fw-bold">How can you discover this pattern yourself, especially if you're not a math expert? </span>
+            How can you be sure that the remote isn't just randomly selecting channels?</p>
+        <p class="text-center">Start with a simpler approach: look for a rule that consistently applies when using the broken remote.<br>Here's a hint: With just 5 rules, you can fully describe the behavior of the broken remote.</p>
+        
+        
+        <div class="container mt-5 d-flex justify-content-center">
+            <ol class="list-group centered-list">
+                <li > <h4>Basic Rule: Channel Range</h3>
+                    <p class="text-center">The resulting channel will always be one of the 5 available channels. Let's label these channels \(G\). <br>This rule might seem obvious, but it has a specific term in mathematics: a binary operation. A binary operation involves two parameters, <br>the current and the requested channel, and our remote always returns a channel within \(G\).</p>
+                
+
+                </li>
+                <li ><h4>Symmetry</h4>
+                    <p class="text-center">Another observation reveals that the order of the channels doesn't matter. <br>For instance, combining channels 1 and 2 yields the same result as combining channels 2 and 1. <br>This is known as symmetry: the remote operation is commutative.</p>
+
+
+                </li>
+                <li ><h4>Zero Element</h4>
+                    <p class="text-center">For button 5, we've identified that it always leaves the current channel unchanged. <br>This button represents what we call the zero element because, <br>just like adding zero in arithmetic, it doesn't alter the outcome:
+                        \[ zero element+original=original=original+zero element \]
+                        The presence of such a zero element is another rule of our remote.
+                    </p>
+                    
+                </li>
+                <li> <h4>Inverse Element</h4>
+                        <p class="text-center">The fourth rule states that every channel has an inverse. <br>You can always return to the zero element (channel 5) by using the appropriate inverse channel. <br>For a given channel, the inverse can be found as:
+                            \[ inverse\text{ of current }=(5 - current)mod5\]
+                            This means:
+                            \[(current+inverse)mod5=(current+(5-current))mod5=0\]
+                            Channel 0 and channel 5 are considered the same as stated above.
+                        </p>
+                </li>
+                <li> <h4>Associativity</h4>
+                        <p class="text-center">The last rule involves how three channels are combined. The order in which you combine the channels doesn't matter:
+                            \[ (request1+request2)+request3=request1+(request2+request3)\]
+                            This property is known as associativity.
+                        </p>
+                </li>
+            </ol>
+
+            
+        </div>
+        <p class="text-center"><span class="fw-bold">In summary, here are the 5 rules:</span></p>
+        <div class="container centered-container" style="width: 50%;">
+            <ol class="list-group centered-list">
+                <li >The resulting channel is always one of the 5 available channels.</li>
+                <li class="">The operation is commutative (order doesn't matter).</li>
+                <li class="">There is a zero element (button 5) that leaves the channel unchanged.</li>
+                <li class="">Every channel has an inverse channel that returns you to the zero element.</li>
+                <li> The operation is associative (grouping doesn't matter).</li>
+            </ol>
+        </div>
+        
+        <h3 class="text-center">Conclusion</h3>
+        <p class="text-center">
+            Structures that follow these 5 rules are termed groups. <br>Despite appearing random, our TV remote adheres to these rules, just as simple addition within whole numbers does.
+        </p>
+    </div>
+   </div>
+
+
+    <script src="js/remote.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Main Content -->
+<div class="container custom-section">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="text-center">Exploring a More Complex Example of Groups: The Broken Train</h1>
+            <p class="text-center">Now that you've gained an understanding of groups, let's dive into a more challenging scenario.<br> Earlier, we examined a broken remote that cycled through channels in a predictable pattern. Now, let's consider a different, more intriguing example: a broken train.</p>
+            <p class="text-center">Imagine it's been a long day, and you're finally on your way home.<br> The train is crowded, but you decide to be considerate and let others take the available seats. A woman boards the train and sits on the far left.</p>
+            <p class="text-center">Click on the far left seat to see what happens next...</p>
+
+            <div class="container text-center mt-5">
+                <div class="image-container-train">
+                    <img class="background "src="img/trainV1.svg" alt="Image with buttons">
+                    <img id="train1human1" class="human1 seatHuman" src="img/human.svg" alt="human on the left seat">
+                    <img id="train1human2" class="human2 seatHuman" src="img/human.svg" alt="human on middel left seat">
+                    <img id="train1human3" class="human3 seatHuman" src="img/human.svg" alt="human on middel right seat">
+                    <img id="train1human4" class="human4 seatHuman" src="img/human.svg" alt="human on right seat">
+                    <img id="train1human1Hover" class="human1Hover hoverHuman" src="img/human.svg" alt="human on the left seat">
+                    <img id="train1human2Hover" class="human2Hover hoverHuman" src="img/human.svg" alt="human on middel left seat">
+                    <img id="train1human3Hover" class="human3Hover hoverHuman" src="img/human.svg" alt="human on middel right seat">
+                    <img id="train1human4Hover" class="human4Hover hoverHuman" src="img/human.svg" alt="human on right seat">
+
+                    <button id="train1button1" class="button1-train btn btn-primary image-button-train train-button no-hover "></button>
+                </div>
+            </div>
+
+            <p class="text-center">Initially, everything seems normal as the train moves to the next station. <br>Upon arrival, a man steps onto the train, distracted by his phone. Unaware of the woman already seated, he tries to sit in the same far-left seat. Just as he does, something peculiar occurs. </p>
+            <p class="text-center">Click on the far left seat again to see the result.</p>
+            <div class="container text-center mt-5">
+                <div class="image-container-train">
+                    <img class="background "src="img/trainV1.svg" alt="Image with buttons">
+                    <img id="train2human1" class="human1 seatHuman" src="img/human.svg" alt="human on the left seat">
+                    <img id="train2human2" class="human2 seatHuman" src="img/human.svg" alt="human on middel left seat">
+                    <img id="train2human3" class="human3 seatHuman" src="img/human.svg" alt="human on middel right seat">
+                    <img id="train2human4" class="human4 seatHuman" src="img/human.svg" alt="human on right seat">
+                    <img id="train2human1Hover" class="human1Hover hoverHuman" src="img/human.svg" alt="human on the left seat">
+                    <img id="train2human2Hover" class="human2Hover hoverHuman" src="img/human.svg" alt="human on middel left seat">
+                    <img id="train2human3Hover" class="human3Hover hoverHuman" src="img/human.svg" alt="human on middel right seat">
+                    <img id="train2human4Hover" class="human4Hover hoverHuman" src="img/human.svg" alt="human on right seat">
+
+                    <button id="train2button1" class="button1-train btn btn-primary image-button-train train-button no-hover "></button>
+                </div>
+            </div>
+
+            <p class="text-center">The woman disappears! The man, instead of sitting on the left, is now seated on the right.<br> No one else seems to notice, and the man is completely unbothered.</p>
+            <p class="text-center">You begin to wonder if you're imagining things, but you decide not to touch any more seats. With growing curiosity, you wait for the next station.</p>
+            <p class="text-center">A woman with two children enters. She directs one child to the seat next to the man on the right. </p>
+            <p class="text-center">Click on the seat next to the man (the left seat on the right side).</p>
+            <div class="container text-center mt-5">
+                <div class="image-container-train">
+                    <img class="background "src="img/trainV1.svg" alt="Image with buttons">
+                    <img id="train3human1" class="human1 seatHuman" src="img/human.svg" alt="human on the left seat">
+                    <img id="train3human2" class="human2 seatHuman" src="img/human.svg" alt="human on middel left seat">
+                    <img id="train3human3" class="human3 seatHuman" src="img/human.svg" alt="human on middel right seat">
+                    <img id="train3human4" class="human4 seatHuman" src="img/human.svg" alt="human on right seat">
+                    <img id="train3human1Hover" class="human1Hover hoverHuman" src="img/human.svg" alt="human on the left seat">
+                    <img id="train3human2Hover" class="human2Hover hoverHuman" src="img/human.svg" alt="human on middel left seat">
+                    <img id="train3human3Hover" class="human3Hover hoverHuman" src="img/human.svg" alt="human on middel right seat">
+                    <img id="train3human4Hover" class="human4Hover hoverHuman" src="img/human.svg" alt="human on right seat">
+
+                    
+                    <button id="train3button3" class="button3-train btn btn-primary image-button-train train-button no-hover "></button>
+                    
+                </div>
+            </div>
+
+            <p class="text-center">Both the child and the man vanish! You rush over to the mother, concerned, but she looks at you strangely and insists she only had one child. <br>Though you're certain she entered with two, she quickly finds another seat, seemingly unsettled by your confusion.</p>
+            <p class="text-center">You pull out your notebook and start jotting down your observations, eventually formulating three rules:</p>
+            <p class="text-center"><span class="fw-bold">In summary, here are the 5 rules:</span></p>
+            <div class="container centered-container" style="width: 50%;">
+                <ol class="list-group centered-list">
+                    <li ><span class="fw-bold">One Seat, One Person:</span> Each of the four seats can have at most one person sitting in it.</li>
+                    <li class=""><span class="fw-bold">Adjacent Occupancy Disappearance:</span> If two adjacent seats are simultaneously occupied, everyone sitting in those seats disappears, leaving all the seats empty. Note that the middle seats are considered separate due to the passageway.</li>
+                    <li class=""><span class="fw-bold">Opposite Side Shift:</span> If a person attempts to sit in a seat that's already occupied on either the far-left or far-right, one person vanishes, and the other is shifted to the opposite side.</li>
+                </ol>
+            </div>
+            <p class="text-center">But can we explain these mysterious rules? Do they account for all possible outcomes?<br> And, more intriguingly, does this broken train form a group like the broken remote?</p>
+            <p class="text-center">There are five possible seating arrangements, similar to the five channels on the remote. These are:</p>
+            
+            <div class="container centered-container" style="width: 50%;">
+                <ul class="list-group centered-list">
+                    <li ><span class="fw-bold">E:</span> All seats are empty.</li>
+                    <li ><span class="fw-bold">LL:</span> The leftmost seat is occupied.</li>
+                    <li ><span class="fw-bold">LR:</span> The right seat on the left side is occupied.</li>
+                    <li ><span class="fw-bold">RL:</span> The left seat on the right side is occupied.</li>
+                    <li ><span class="fw-bold">RR:</span> The rightmost seat is occupied.</li>
+                </ul>
+            </div>
+            <p class="text-center">You can either write down these possibilities or use the simulation below to test if the train's behaviour forms a group.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        
+        <div class="container text-center mt-5">
+            <div class="image-container-train">
+                <img class="background "src="img/trainV1.svg" alt="Image with buttons">
+                <img id="train4human1" class="human1 seatHuman" src="img/human.svg" alt="human on the left seat">
+                <img id="train4human2" class="human2 seatHuman" src="img/human.svg" alt="human on middel left seat">
+                <img id="train4human3" class="human3 seatHuman" src="img/human.svg" alt="human on middel right seat">
+                <img id="train4human4" class="human4 seatHuman" src="img/human.svg" alt="human on right seat">
+                <img id="train4human1Hover" class="human1Hover hoverHuman" src="img/human.svg" alt="human on the left seat">
+                <img id="train4human2Hover" class="human2Hover hoverHuman" src="img/human.svg" alt="human on middel left seat">
+                <img id="train4human3Hover" class="human3Hover hoverHuman" src="img/human.svg" alt="human on middel right seat">
+                <img id="train4human4Hover" class="human4Hover hoverHuman" src="img/human.svg" alt="human on right seat">
+
+                <button id="train4button1" class="button1-train btn btn-primary image-button-train train-button no-hover "></button>
+                <button id="train4button2" class="button2-train btn btn-primary image-button-train train-button no-hover"></button>
+                <button id="train4button3" class="button3-train btn btn-primary  image-button-train train-button  no-hover"></button>
+                <button id="train4button4" class="button4-train btn btn-primary  image-button-train train-button no-hover"></button>
+            </div>
+        </div>
+        <p class="text-center">You can use this table as help. The table changes based on your actions.</p>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <table id="coordinateTable" class="table table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th></th>
+                                <th>E</th>
+                                <th>LL</th>
+                                <th>LR</th>
+                                <th>RL</th>
+                                <th>RR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr> <!-- row 0-->
+                                <th>E</th>
+                                <td id="00"></td>
+                                <td id="01"></td>
+                                <td id="02"></td>
+                                <td id="03"></td>
+                                <td id="04"></td>
+                            </tr>
+                            <tr> <!-- row 1-->
+                                <th>LL</th>
+                                <td id="10"></td>
+                                <td id="11"></td>
+                                <td id="12"></td>
+                                <td id="13"></td>
+                                <td id="14"></td>
+                            </tr>
+                            <tr> <!-- row 2-->
+                                <th>LR</th>
+                                <td id="20"></td>
+                                <td id="21"></td>
+                                <td id="22"></td>
+                                <td id="23"></td>
+                                <td id="24"></td>
+                            </tr>
+                            <tr> <!-- row 3-->
+                                <th>RL</th>
+                                <td id="30"></td>
+                                <td id="31"></td>
+                                <td id="32"></td>
+                                <td id="33"></td>
+                                <td id="34"></td>
+                            </tr>
+                            <tr> <!-- row 4-->
+                                <th>RR</th>
+                                <td id="40"></td>
+                                <td id="41"></td>
+                                <td id="42"></td>
+                                <td id="43"></td>
+                                <td id="44"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    
+
+
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p class="text-center">Upon inspection, you'll notice that the three rules don't cover all possible scenarios. However, could we perhaps add more rules to form a complete solution? If so, which rules should we add or remove?</p>
+            <p class="text-center">Here's a hint: there's only one group with five elements, and it's no coincidence that we studied the broken remote earlier.</p>
+            <p class="text-center">Since there's just one group with five elements, we only need to determine whether the train and the remote behave similarly. The key with the remote was the cyclic nature of its one button, which cycled through all the channels. Mathematically, we call this a cyclic element because it covers every possibility when repeated.</p>
+            <p class="text-center">If the train operates like the remote, we should start by looking for a cyclic element. Let's begin with <span class="fw-bold">LL:</span></p>
+            <div class="container centered-container" style="width: 50%;">
+                <ul class="list-group centered-list">
+                    <li ><span class="fw-bold">E + LL = LL</span></li>
+                    <li ><span class="fw-bold">LL + LL = RR</span></li>
+                    <li ><span class="fw-bold">RR + LL = ?</span></li>
+                </ul>
+            </div>
+
+            <p class="text-center">At this point, no rule exists for <span class="fw-bold">RR + LL</span>, <br>so let's introduce two new rules (you can verify that choosing different rules leads to the same final conclusion):</p>
+            
+            <div class="container centered-container" style="width: 50%;">
+                <ul class="list-group centered-list">
+                    <li ><span class="fw-bold">RR + LL = RL</span></li>
+                    <li ><span class="fw-bold">RL + LL = LR</span></li>
+                    <li ><span class="fw-bold">LR + LL = E</span>(already one of the rules)</li>
+                </ul>
+            </div>
+
+            <p class="text-center">By adding <span class="fw-bold">LL</span>, we can generate all possible outcomes. But did we introduce any contradictions by adding these new rules? Let’s check:</p>
+            
+            <div class="container centered-container" style="width: 50%;">
+                <ul class="list-group centered-list">
+                    <li >We know from the original rules that<span class="fw-bold">RR + RR = LL</span></li>
+                    <li >But since <span class="fw-bold">RR</span> is the same as <span class="fw-bold">LL + LL</span>, we can write <span class="fw-bold">RR + RR</span> as <span class="fw-bold">RR + (LL + LL)</span>.></li>
+                </ul>
+            </div>
+            
+            
+            <p class="text-center">If this forms a group, we should be able to add <span class="fw-bold">RR + LL</span> first, which gives us <span class="fw-bold">RL</span>.</p>
+            <p class="text-center"><span class="fw-bold">RR + RR = RR + (LL + LL) = (RR + LL) + LL = RL + LL = LR</span></p>
+            <p class="text-center">Now we have two conflicting results:</p>
+            <div class="container centered-container" style="width: 50%;">
+                <ul class="list-group centered-list">
+                    <li ><span class="fw-bold">RR + RR = LR</span></li>
+                    <li ><span class="fw-bold">RR + RR = LL</span></li>
+                </ul>
+            </div>
+            <p class="text-center">This contradiction shows that our assumption that the train's behaviour forms a group, even after adding new rules, is false.
+                <br>You can try other combinations, but you'll find that the train's seats will never behave in the same way as the remote.</p>
+            <h2 class="text-center">Conclusion</h2>
+            <p class="text-center">By examining simple rules underlying complex behaviours, we discovered a clear pattern with the remote, which is known as a group. However, not all complex behaviours can be simplified in this way, as we saw with the train.</p>
+        </div>
+
+
+        
+    </div>
+</div>
+
+
+<!-- Bootstrap and JavaScript dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JavaScript -->
+<script src="js/train.js"></script>
+
+
+
     <!-- Footer -->
     <footer class="bg-light text-center text-lg-start fixed-bottom">
         <div class="text-center p-3">

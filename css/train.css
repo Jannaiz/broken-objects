@@ -2,43 +2,43 @@
 
 
 /* Container for the image and buttons */
-.image-container {
+.image-container-train {
     position: relative;
     display: inline-block;
 }
 
 /* Style for the image */
-.image-container .background {
+.image-container-train .background {
     display: block;
     width: 100%; /* Ensure the image fits within the container */
 }
 
 /* Position the buttons absolutely within the container */
-.image-button {
+.image-button-train {
     position: absolute;
     background-color: transparent;
     border:none;
 }
-.remote-button {
+.train-button {
     width: 15%;
     height: 75%;
     transform: rotate(10deg);
 }
 /* Specific button positions */
-.button1 {
+.button1-train {
     top: 15%;
     left: 22.4%;
 }
-.button2 {
+.button2-train {
     top: 15%;
     left: 38.5%;
 }
 
-.button3 {
+.button3-train {
     top: 15%;
     right: 17.5%;
 }
-.button4 {
+.button4-train {
     top: 15%;
   right: 1.5%;
 }
